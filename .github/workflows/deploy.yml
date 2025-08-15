@@ -28,9 +28,9 @@ jobs:
           aws s3 sync . s3://my-portfolio-site-stuart \
             --delete \
             --exclude ".git/*" \
-            --exclude "*.githuhub/*" \
+            --exclude ".github/*" \
             --exclude ".gitignore" \
-            --exclude "deploy.yml" 
+            --exclude "deploy.yml"
       
       # Invalidate CloudFront cache
       - name: Invalidate CloudFront cache
