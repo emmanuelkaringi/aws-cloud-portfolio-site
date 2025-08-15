@@ -28,7 +28,7 @@ jobs:
           aws s3 sync . s3://my-portfolio-site-stuart \
             --delete \
             --exclude ".git/*" \
-            --exclude ".githuhub/*" \
+            --exclude "*.githuhub/*" \
             --exclude ".gitignore" \
             --exclude "deploy.yml" 
       
