@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Kariithi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <h1 class="logo"> Emmanuel Kariithi</h1>
+        </div>
+
+        <!-- Burger Icon -->
+        <div class="burger" id="burger">
+            <span>🍔</span>
+        </div>
+
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container about-grid">
+            <!-- LEFT COLUMN: Profile + Quick Info -->
+            <div class="about-left">
+                <img src="profile.jpg" alt="Emmanuel's portrait" class="profile-img">
+                <div class="quick-info">
+                    <h3>Quick Info</h3>
+                    <p><strong>Location:</strong> Nyeri, Kenya</p>
+                    <p><strong>Experience:</strong> 6+ Years</p>
+                    <p><strong>Specialties:</strong> Backend Development, IT Support, Cloud Projects</p>
+                    <p><strong>Visitor Count:</strong> <span id="visitor-count">Loading...</span></p>
+                    <!-- Add clickable social links -->
+                    <div class="social-links">
+                        <a href="https://github.com/username" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: About Text + Skills -->
+            <div class="about-right">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm <strong>Emmanuel Kariithi</strong> a <strong>Developer & IT Support Specialist</strong> with 6+ years of experience delivering
+                    reliable software solutions and robust IT infrastructure for fast-paced environments.
+                </p>
+                <!-- <p>
+                    I’ve built and maintained responsive web applications, architected scalable backend systems, and
+                    resolved complex network and hardware issues — ensuring uptime, performance, and security across
+                    diverse industries.
+                </p> -->
+                <p>
+                    While my professional background is rooted in IT support and backend development, I’m actively
+                    advancing my <strong>cloud engineering skills</strong> through personal projects on AWS, Docker,
+                    Kubernetes, and Terraform.
+                </p>
+
+                <!-- Technical Snapshot -->
+                <div class="skills-grid">
+                    <div>
+                        <h4>Languages & Frameworks</h4>
+                        <span>Python</span>
+                        <span>Node.js</span>
+                        <span>React</span>
+                        <span>Bash</span>
+                    </div>
+                    <div>
+                        <h4>Cloud & DevOps (Projects)</h4>
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>Terraform</span>
+                        <span>CI/CD Pipelines</span>
+                    </div>
+                    <div>
+                        <h4>Databases</h4>
+                        <span>PostgreSQL</span>
+                        <span>DynamoDB</span>
+                        <span>Redis</span>
+                    </div>
+                    <div>
+                        <h4>IT Support & Networking</h4>
+                        <span>System Maintenance</span>
+                        <span>Network Security</span>
+                        <span>Infrastructure Upgrades</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>My projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Microservices on AWS</h3>
+                    <p>Built scalable microservices using AWS ECS, API Gateway and Lambda with auto-scaling
+                        capabilities.</p>
+                    <div class="links">
+                        <a href="https://github.com/yourusername/project1" target="_blank">GitHub</a>
+                        <a href="https://dev.to/yourusername/article1" target="_blank">Article</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>CI/CD Pipeline</h3>
+                    <p>Automated deployment pipeline with Terraform, reducing deployment time by 80%.</p>
+                    <div class="links">
+                        <a href="https://github.com/yourusername/project1" target="_blank">GitHub</a>
+                        <a href="https://dev.to/yourusername/article1" target="_blank">Article</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Serverless Data Pipeline</h3>
+                    <p>Cost-effective data processing using AWS Lambda, S3, and DynamoDB for real-time analytics.</p>
+                    <div class="links">
+                        <a href="https://github.com/yourusername/project3" target="_blank">GitHub</a>
+                        <a href="https://dev.to/yourusername/article3" target="_blank">Article</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Serverless Data Pipeline</h3>
+                    <p>Cost-effective data processing using AWS Lambda, S3, and DynamoDB for real-time analytics.</p>
+                    <div class="links">
+                        <a href="https://github.com/yourusername/project3" target="_blank">GitHub</a>
+                        <a href="https://dev.to/yourusername/article3" target="_blank">Article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles">
+        <div class="container">
+            <h2>Latest Articles</h2>
+            <div class="article-grid">
+                <article>
+                    <h3>Building Resilient Microservices</h3>
+                    <p>Learn how to design fault-tolerant microservices using AWS services...</p>
+                    <a href="https://dev.to/yourusername/microservices" target="_blank">Read More →</a>
+                </article>
+
+                <article>
+                    <h3>Docker Best Practices</h3>
+                    <p>Essential Docker practices for production ready containers...</p>
+                    <a href="http://dev.to/yourusername/docker" target="_blank">Read More →</a>
+                </article>
+
+                <article>
+                    <h3>Infrastructure as Code</h3>
+                    <p>Master Terraform for automated infrastructure management...</p>
+                    <a href="http://dev.to/yourusername/terraform" target="_blank">Read More →</a>
+                </article>
+
+                <article>
+                    <h3>Docker Best Practices</h3>
+                    <p>Essential Docker practices for production ready containers...</p>
+                    <a href="http://dev.to/yourusername/docker" target="_blank">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Ready to discuss cloud architecture or collaborate on a project? Let's chat!</p>
+                    <div class="connect-section">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/your-link" target="_blank"><i
+                                        class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i>
+                                    GitHub</a></li>
+                            <li><a href="https://twitter.com/your-handle" target="_blank"><i class="fab fa-twitter"></i>
+                                    Twitter</a></li>
+                            <li><a href="https://dev.to/your-username" target="_blank"><i class="fab fa-dev"></i>
+                                    Dev.to</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="johndoe@email.com" required>
+                    <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+                    <button type="submit">Send Message!</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Emmanuel Kariithi. All rights reserved.</p>
+            <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
