@@ -25,7 +25,12 @@ jobs:
       # Sync files to S3
       - name: Sync files to S3
         run: |
-          aws s3 sync . s3://my-portfolio-site-stuart --delete --exclude ".git/*" --exclude ".githuhub/*"
+          aws s3 sync . s3://my-portfolio-site-stuart \
+            --delete \
+            --exclude ".git/*" \
+            --exclude ".githuhub/*" \
+            --exclude ".gitignore" \
+            --exclude "deploy.yml" 
       
       # Invalidate CloudFront cache
       - name: Invalidate CloudFront cache
