@@ -70,3 +70,33 @@ document.addEventListener("DOMContentLoaded", async () => {
         countElement.textContent = "Error";
     }
 });
+
+// Contact Form Integration with SES
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = {
+        name: this.name.value,
+        email: this.email.value,
+        message: this.message.value
+    };
+
+    try {
+        const res = await fetch("https://YOUR_API_GATEWAY_URL", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+        });
+
+        const data = await res.json();
+
+        if (res.ok) {
+            alert("Message sent successfully!");
+            this.reset();
+        } else {
+            alert(data.error || "Failed to send message.");
+        }
+    } catch (err) {
+        alert("An error occurred. Please try again later.");
+    }
+});
