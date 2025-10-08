@@ -1,13 +1,13 @@
 /* CSS Variables */
 :root {
-    --primary-orange: #ff6b35;
-    --primary-blue: #004e89;
+    --primary-orange: #bd8f53;
+    --primary-brown: #9b4819;
     --bright-yellow: #ffd23f;
-    --electric-green: #06ffa5;
-    --hot-pink: #fb3569;
+    --dark-gray-green: #314028;
+    --vivid-red: #ff5139;
     --white: #ffffff;
-    --dark-gray: #2d3436;
-    --light-gray: #f8f9fa;
+    --dark-gray: #191919;
+    --light-orange: #f4f1e8;
 }
 
 /* Global Reset & Base Styles*/
@@ -31,7 +31,7 @@ body {
 
 /* Header & NavBar */
 header{
-    background: var(--primary-blue);
+    background: var(--primary-brown);
     color: var(--white);
     padding: 5px 5%;
     display: flex;
@@ -40,7 +40,6 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -66,7 +65,7 @@ header{
 
 .nav-links a:hover{
     background-color: var(--bright-yellow);
-    color: var(--primary-blue);
+    color: var(--primary-brown);
     transform: translateY(-2px);
 }
 
@@ -76,7 +75,7 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: var(--light-gray);
+    background-color: var(--light-orange);
 }
 
 /* Section Headings */
@@ -84,9 +83,8 @@ h2 {
     font-family: 'Fredoka One', cursive;
     font-size: 2.5rem;
     text-align: center;
-    color: var(--primary-blue);
+    color: var(--primary-brown);
     margin-bottom: 40px;
-    text-shadow: 2px 2px 0px var(--bright-yellow);
 }
 
 /* About Section */
@@ -106,7 +104,7 @@ h2 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 5px solid var(--bright-yellow);
+    border: 5px solid var(--primary-brown);
     margin-bottom: 20px;
 }
 
@@ -114,12 +112,12 @@ h2 {
     background: var(--white);
     padding: 20px;
     border-radius: 15px;
-    border: 2px solid var(--light-gray);
+    border: 2px solid var(--light-orange);
     text-align: left;
 }
 
 .quick-info h3 {
-    color: var(--primary-blue);
+    color: var(--primary-brown);
     margin-bottom: 10px;
 }
 
@@ -137,7 +135,7 @@ h2 {
 }
 
 .social-links a {
-    background: var(--primary-blue);
+    background: var(--primary-brown);
     color: var(--white);
     padding: 8px 12px;
     border-radius: 8px;
@@ -147,7 +145,7 @@ h2 {
 
 .social-links a:hover {
     background: var(--bright-yellow);
-    color: var(--primary-blue);
+    color: var(--primary-brown);
 }
 
 /* Right column text */
@@ -173,7 +171,7 @@ h2 {
 
 .skills-grid span {
     display: inline-block;
-    background: linear-gradient(45deg, var(--electric-green), var(--primary-blue));
+    background: var(--dark-gray-green);
     color: var(--white);
     padding: 6px 12px;
     border-radius: 12px;
@@ -205,7 +203,7 @@ h2 {
 }
 
 .project-card h3 {
-    color: var(--primary-blue);
+    color: var(--primary-brown);
     font-size: 1.4rem;
     margin-bottom: 15px;
 }
@@ -235,7 +233,7 @@ h2 {
 
 .links a:last-child {
     background: var(--bright-yellow);
-    color: var(--primary-blue);
+    color: var(--primary-brown);
 }
 
 .links a:hover{
@@ -260,7 +258,7 @@ h2 {
     background: var(--white);
     padding: 25px;
     border-radius: 20px;
-    border-left: 6px solid var(--hot-pink);
+    border-left: 6px solid var(--vivid-red);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     text-align: left;
@@ -271,7 +269,7 @@ h2 {
 }
 
 .article-grid h3 {
-    color: var(--primary-blue);
+    color: var(--primary-brown);
     font-size: 1.2rem;
     margin-bottom: 15px;
 }
@@ -282,14 +280,14 @@ h2 {
 }
 
 .article-grid a {
-    color: var(--hot-pink);
+    color: var(--vivid-red);
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s ease;
 }
 
 .article-grid a:hover {
-    color: var(--primary-blue);
+    color: var(--primary-brown);
 }
 
 /* Contact Section */
@@ -309,7 +307,7 @@ h2 {
     background: var(--white);
     padding: 30px;
     border-radius: 20px;
-    border: 4px solid var(--electric-green);
+    border: 4px solid var(--dark-gray-green);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     text-align: left;
 }
@@ -336,7 +334,7 @@ h2 {
 }
 
 .connect-section ul li a:hover {
-    color: var(--electric-green);
+    color: var(--dark-gray-green);
 }
 
 .connect-section i {
@@ -347,7 +345,7 @@ form {
     background: var(--white);
     padding: 30px;
     border-radius: 20px;
-    border: 4px solid var(--bright-yellow);
+    border: 4px solid var(--vivid-red);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
@@ -356,7 +354,7 @@ form textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    border: 2px solid var(--light-gray);
+    border: 2px solid var(--light-orange);
     border-radius: 10px;
     font-family: 'Nunito', sans-serif;
     font-size: 1 rem;
@@ -366,11 +364,11 @@ form textarea {
 form input:focus,
 form textarea:focus {
     outline: none;
-    border-color: var(--primary-orange);
+    border-color: var(--vivid-red);
 }
 
 form button {
-    background: linear-gradient(45deg, var(--primary-orange), var(--hot-pink));
+    background: linear-gradient(45deg, var(--vivid-red), var(--primary-brown));
     color: var(--white);
     padding: 15px 30px;
     border: none;
@@ -410,7 +408,7 @@ form button:hover {
 
 /* Footer */
 .site-footer {
-    background: var(--primary-blue);
+    background: var(--primary-brown);
     color: #fff;
     padding: 40px 20px 20px;
     font-size: 14px;
@@ -466,7 +464,7 @@ form button:hover {
     .nav-links {
         flex-direction: column;
         gap: 15px;
-        background: var(--primary-blue);
+        background: var(--primary-brown);
         position: absolute;
         top: 60px;
         right: 0;
